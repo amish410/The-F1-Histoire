@@ -1,8 +1,23 @@
-.image {
-    width: 100px; 
-    height: 100px; 
-    margin: 0px;
+.driver-image {
+    width: 350px; 
+    height: auto; 
     display: block;
-    align-items: center;
-    padding-left: 25%;
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
 }
