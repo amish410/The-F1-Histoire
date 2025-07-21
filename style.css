@@ -5,19 +5,82 @@
     
 }
 
-h1 {
+.header h1 {
     text-align: center;
-}
-
-h2 {
-    text-align: center;
+    font-family: 'Orbitron';
+    color: #ffffff;
+    font-size: 50px;
 }
 
 p {
     text-align: center;
+    font-family: 'Inter';
+    color: #F1F1F1;
 }
 
-.center {
-    margin-left: auto;
-    margin-right: auto;
+h2 {
+    text-align: center;
+    font-family: 'Orbitron';
+    color: #ffffff;
+    font-size: 30px;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Orbitron';
+    color: #ffffff;
+}
+
+.teams td, .teams tr, .teams th {
+    font-family: 'Inter';
+    color: #F1F1F1;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 12px;
+    text-align: center;
+}
+
+.teams a:link {
+    font-family: 'Inter';
+    color: #FF1801;
+}
+
+.teams a:visited {
+    font-family: 'Inter';
+    color: #cc1605;
+}
+
+.teams a:hover {
+    font-family: 'Inter';
+    color: #e43829;
+}
+
+.input {
+    color: #F1F1F1;
+    border: 3px solid #28282b;
+    border-radius: 5px;
+    height: 20px;
+    width: 250px;
+    font-family: 'Inter';
+    font-size: 17px;
+    box-shadow: 0 4px 8px rgba(94, 88, 88, 0.2);
+    text-indent: 7px;
+    background-color: rgba(8, 8, 8, 0.425);
+    display: flex;
+    justify-content: space-around;
+}
+
+input:focus {
+    border: 2px solid #DC0000;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(94, 88, 88, 0.2);
+}
+
+.standings td, .standings tr, .standings th {
+    font-family: 'Inter';
+    color: #F1F1F1;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
 }

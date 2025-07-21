@@ -4,65 +4,117 @@
     <meta charset="UTF-8" />
     <title>The F1 Histoire</title>
     <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,599;1,599&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,599;1,599&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>The F1 Histoire</h1>
-    <p>Welcome to The F1 Histoire where you can find information relating to anything including history relating to the teams, all of the F1 championships and more!</p>
-
-    <h2>The Teams</h2>
-    <p>Currently, F1 has 10 teams with an 11th team coming in 2026, but the history of each of these teams streches long! Below is a table containing all of the teams, click on the links to find more information about them.</p>
-    <table class="center" border="1px">
-        <tr>
-            <th></th>
-            <th><a href="the teams/mclaren/mclaren.html">McLaren</a></th>
-            <th><a href="the teams/ferrari.html">Ferrari</a></th>
-            <th><a href="the teams/mercs.html">Mercedes-AMG</a></th>
-            <th><a href="the teams/redbull.html">Red Bull Racing</a></th>
-            <th><a href="the teams/racingbulls.html">Racing Bulls</a></th>
-            <th><a href="the teams/aston.html">Aston Martin</a></th>
-            <th><a href="the teams/hass.html">Hass</a></th>
-            <th><a href="the teams/alpine.html">Alpine</a></th>
-            <th><a href="the teams/williams.html">Williams Racing</a></th>
-            <th><a href="the teams/stake.html">Stake F1 Team</a></th>
-        </tr>
-        <tr>
-            <th>Team Principle</th>
-            <td>Andrea Stella</td>
-            <td>Fred Vasseur</td>
-            <td>Toto Wolff</td>
-            <td>Laurent Mekies</td>
-            <td>Alan Permane</td>
-            <td>Andy Cowell</td>
-            <td>Ayao Komatsu</td>
-            <td>Flavio Briatore</td>
-            <td>James Vowles</td>
-            <td>Jonathan Wheatley</td>
-        </tr>
-        <tr>
-            <th>Founded</th>
-            <td>1963</td>
-            <td>1950</td>
-            <td>2010</td>
-            <td>2005</td>
-            <td>2006</td>
-            <td>2021</td>
-            <td>2016</td>
-            <td>2021</td>
-            <td>1977</td>
-            <td>1993</td>
-        </tr>
-    </table>
-
-    <h2>The Championships</h2>
-    <p>There are two different championships, the drivers and the constructors. You can find all the past information of the championships below.</p>
-    <div style="display: grid; grid-template-columns: auto auto; align-items: center; padding-left: 25%;">
-        <div>
-            <h3>Constructors Championship</h3>
-            <input type="number" placeholder="Select Year" min="1950" max="2025" style="width: 200px;">
-        </div>
-        <div>
-            <h3>Drivers Championship</h3>
-            <input type="number" placeholder="Select Year" min="1950" max="2025" style="width: 200px; ">
+<body style="background-color: #1b1b20;">
+    <div class="header">
+        <h1>The <span style="color: #FF1801;">F1</span> Histoire</h1>
+        <p>Welcome to The F1 Histoire where you can find information relating to anything including history relating to the teams, all of the F1 championships and more!</p>
+    </div>    
+<br>
+    <div class="teams">
+        <h2>The Teams</h2>
+        <p>Currently, F1 has 10 teams with an 11th team coming in 2026, but the history of each of these teams streches long! Below is a table containing all of the teams, click on the links to find more information about them.</p>
+        <table style="display: flex; justify-content: center;" class="teams">
+            <tr>
+                <th></th>
+                <th><a href="the teams/mclaren/mclaren.html">McLaren</a></th>
+                <th><a href="the teams/ferrari.html">Ferrari</a></th>
+                <th><a href="the teams/mercs.html">Mercedes-AMG</a></th>
+                <th><a href="the teams/redbull.html">Red Bull Racing</a></th>
+                <th><a href="the teams/racingbulls.html">Racing Bulls</a></th>
+                <th><a href="the teams/aston.html">Aston Martin</a></th>
+                <th><a href="the teams/hass.html">Hass</a></th>
+                <th><a href="the teams/alpine.html">Alpine</a></th>
+                <th><a href="the teams/williams.html">Williams Racing</a></th>
+                <th><a href="the teams/stake.html">Stake F1 Team</a></th>
+            </tr>
+            <tr>
+                <th>Team Principle</th>
+                <td>Andrea Stella</td>
+                <td>Fred Vasseur</td>
+                <td>Toto Wolff</td>
+                <td>Laurent Mekies</td>
+                <td>Alan Permane</td>
+                <td>Andy Cowell</td>
+                <td>Ayao Komatsu</td>
+                <td>Flavio Briatore</td>
+                <td>James Vowles</td>
+                <td>Jonathan Wheatley</td>
+            </tr>
+            <tr>
+                <th>Founded</th>
+                <td>1963</td>
+                <td>1950</td>
+                <td>2010</td>
+                <td>2005</td>
+                <td>2006</td>
+                <td>2021</td>
+                <td>2016</td>
+                <td>2021</td>
+                <td>1977</td>
+                <td>1993</td>
+            </tr>
+        </table>
+    </div>
+<br>
+    <div>
+        <h2>The Championships</h2>
+        <p>There are two different championships, the drivers and the constructors. You can find all the past information of the championships below.</p>
+        <div style="display: flex; justify-content: space-around;">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <h3>Constructors Championship</h3>
+                <input type="number" placeholder="Select Year (1950-2025)" min="1950" max="2025" class="input">
+                <br>
+                <table class="standings">
+                    <tr>
+                        <th>Pos</th>
+                        <th>Year</th>
+                        <th>Team</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2025</td>
+                        <td>Mclaren</td>
+                        <td>447</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <h3>Drivers Championship</h3>
+                <input type="number" placeholder="Select Year (1950-2025)" min="1950" max="2025" class="input">
+                <br>
+                <table class="standings">
+                        <tr>
+                            <th>Pos</th>
+                            <th>Year</th>
+                            <th>Name</th>
+                            <th>Points</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2025</td>
+                            <td>Oscar Piastri</td>
+                            <td>247</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                </table>
+            </div>
         </div>
     </div>
 </body>
