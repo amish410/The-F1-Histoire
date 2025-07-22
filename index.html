@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,599;1,599&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,599;1,599&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body style="background-color: #1b1b20;">
     <div class="header">
@@ -67,7 +68,10 @@
         <div style="display: flex; justify-content: space-around;">
             <div style="display: flex; flex-direction: column; align-items: center;">
                 <h3>Constructors Championship</h3>
-                <input type="number" placeholder="Select Year (1950-2025)" min="1950" max="2025" class="input">
+                <input type="number" placeholder="Select Year (1958-2020)" min="1958" max="2020" class="input" id="constructors">
+                <span id="constructorerror" style="color: #FF1801; font-size: 1em; display: none; font-weight: 500;">
+                    Year must be within range 1958-2020
+                </span>
                 <br>
                 <table class="standings">
                     <tr>
@@ -77,10 +81,10 @@
                         <th>Points</th>
                     </tr>
                     <tr>
-                        <td>1</td>
-                        <td>2025</td>
-                        <td>Mclaren</td>
-                        <td>447</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td></td>
@@ -92,22 +96,31 @@
             </div>
             <div style="display: flex; flex-direction: column; align-items: center;">
                 <h3>Drivers Championship</h3>
-                <input type="number" placeholder="Select Year (1950-2025)" min="1950" max="2025" class="input">
+                <input type="number" placeholder="Select Year (1950-2020)" min="1950" max="2020" class="input" id="drivers">
+                <span id="drivererror" style="color: #FF1801; font-size: 1em; display: none; font-weight: 500;">
+                    Year must be within range 1950-2020
+                </span>
                 <br>
                 <table class="standings">
                         <tr>
                             <th>Pos</th>
                             <th>Year</th>
+                            <th>Nationality</th>
                             <th>Name</th>
+                            <th>Team</th>
                             <th>Points</th>
                         </tr>
                         <tr>
-                            <td>1</td>
-                            <td>2025</td>
-                            <td>Oscar Piastri</td>
-                            <td>247</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
+                            <td></td>
+                            <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -120,6 +133,6 @@
 </body>
 <br>
 <footer>
-    <p style="text-align: center;"> made by amish :) </p>
+    <p style="text-align: center;"> made by: amish 🗿 </p>
 </footer>
 </html>
