@@ -32,7 +32,7 @@ function showdrivers() {
     for (let i = 0; i < length; i++) {
       let row = table.insertRow(i+1);
       for (let i = 0; i < 6; i++) {
-        row.insertCell(i)
+        row.insertCell(i);
       }
       let td = row.getElementsByTagName("td")
       let position = drivers[year][i].position;
@@ -42,11 +42,11 @@ function showdrivers() {
       let points = drivers[year][i].points;
 
       td[0].innerHTML = position;
-      td[1].innerHTML = year
-      td[2].innerHTML = nation
-      td[3].innerHTML = driver
-      td[4].innerHTML = team
-      td[5].innerHTML = points
+      td[1].innerHTML = year;
+      td[2].innerHTML = nation;
+      td[3].innerHTML = driver;
+      td[4].innerHTML = team;
+      td[5].innerHTML = points;
     }
 }
 
