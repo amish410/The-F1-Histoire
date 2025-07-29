@@ -84,3 +84,46 @@ input:focus {
     padding: 5px;
     text-align: center;
 }
+
+.name {
+    color: #ffffff;
+    font-size: 25px;
+    font-family: monospace;
+    text-align: center;
+}
+
+.location {
+    color: #ffffff;
+    font-size: 13px;
+    font-family: monospace;
+    text-align: center;
+}
+
+.info {
+    color: #ffffff;
+    font-size: 15px;
+    font-family: monospace;
+    text-align: center;
+}
+
+.image {
+    text-align: center;
+}
+
+.image-box {
+    width: auto; 
+    height: 350px; 
+    margin: 0px;
+    border-radius: 15px;
+    border: 10px solid rgb(29, 28, 28);
+    display: block;
+    background-color: rgba(0, 0, 0, 0.425);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.column_format {
+    column-count: 2;
+    column-gap: 2rem;
+}

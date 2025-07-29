@@ -48,6 +48,8 @@ function showdrivers() {
       td[4].innerHTML = team;
       td[5].innerHTML = points;
     }
+
+    document.getElementById("driverinfo").style.display = "inline";
 }
 
 function showconstructors() {
@@ -81,6 +83,7 @@ function showconstructors() {
       td[2].innerHTML = team;
       td[3].innerHTML = points;
     }
+    document.getElementById("teaminfo").style.display = "inline";
 }
 
 
@@ -101,3 +104,27 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('tracks.json')
+        .then(response => response.json())
+        .then(data => {
+          loadtrackdata(data);
+        });
+});
+
+function loadtrackdata(data) {
+  let track_data =  ``
+  tracks = data.f1_2025_tracks;
+  for (let i = 0; i < tracks.length; i++) {
+    track_data += `
+      <div class="name">${tracks[i].official_name}</div>
+      <div class="location">${tracks[i].location}</div>
+      <div class="info">${tracks[i].info}</div>
+      <div class="image"> <img id="australia" src="tracks/australia.png" alt="australia" class="rounded-image image-box" style="display: inline-block"> </div>
+    `;
+  }
+    console.log("added track:", track_data);
+
+    document.getElementById("trackinfo").innerHTML = track_data;
+}

@@ -1,0 +1,172 @@
+{
+  "f1_2025_tracks": [
+    {
+      "official_name": "Albert Park Circuit",
+      "location": "Melbourne, Australia",
+      "date": "14–16 March 2025",
+      "info": "Melbourne’s fast-flowing semi-street circuit opens the 2025 season with tight corners and heavy braking zones.",
+      "image_link": ""
+    },
+    {
+      "official_name": "Shanghai International Circuit",
+      "location": "Shanghai, China",
+      "date": "21–23 March 2025",
+      "info": "China’s technical layout features a signature spiral opening and one of the longest straights in F1.",
+      "image_link": ""
+    },
+    {
+      "official_name": "Suzuka International Racing Course",
+      "location": "Suzuka, Japan",
+      "date": "4–6 April 2025",
+      "info": "Japan’s historic figure-eight circuit challenges drivers with its high-speed rhythm and complex corners.",
+      "image_link": ""
+    },
+    {
+      "official_name": "Bahrain International Circuit",
+      "location": "Sakhir, Bahrain",
+      "date": "11–13 April 2025",
+      "info": "A desert venue with multiple overtaking zones and extreme track abrasion under floodlights.",
+      "image_link": ""
+    },
+    {
+      "official_name": "Jeddah Corniche Circuit",
+      "location": "Jeddah, Saudi Arabia",
+      "date": "18–20 April 2025",
+      "info": "A narrow, ultra-fast street track in Saudi Arabia with close walls and rapid-fire corners.",
+      "image_link": ""
+    },
+    {
+      "official_name": "Miami International Autodrome",
+      "location": "Miami, USA",
+      "date": "2–4 May 2025",
+      "info": "This American track surrounds the Hard Rock Stadium and mixes long straights with slow, tricky sectors.",
+      "image_link": ""
+    },
+    {
+      "official_name": "Imola – Autodromo Enzo e Dino Ferrari",
+      "location": "Imola, Italy",
+      "date": "16–18 May 2025",
+      "info": "A historic Italian venue with elevation changes and fast sweeping corners in the Emilia-Romagna region.",
+      "image_link": ""
+    },
+    {
+      "official_name": "Circuit de Monaco",
+      "location": "Monte Carlo, Monaco",
+      "date": "23–25 May 2025",
+      "info": "The jewel of F1, Monaco’s unforgiving streets require surgical precision and offer zero margin for error.",
+      "image_link": ""
+    },
+    {
+      "official_name": "Circuit de Barcelona-Catalunya",
+      "location": "Barcelona, Spain",
+      "date": "30 May – 1 June 2025",
+      "info": "A balanced Spanish circuit often used for testing, combining flowing corners with a long main straight.",
+      "image_link": ""
+    },
+    {
+      "official_name": "Circuit Gilles Villeneuve",
+      "location": "Montreal, Canada",
+      "date": "13–15 June 2025",
+      "info": "Montreal’s island track provides a mix of high-speed straights and tight corners bordered by close walls.",
+      "image_link": ""
+    },
+    {
+      "official_name": "Red Bull Ring",
+      "location": "Spielberg, Austria",
+      "date": "27–29 June 2025",
+      "info": "Austria’s compact layout delivers short laps, elevation shifts, and aggressive overtaking opportunities.",
+      "image_link": ""
+    },
+    {
+      "official_name": "Silverstone Circuit",
+      "location": "Silverstone, United Kingdom",
+      "date": "4–6 July 2025",
+      "info": "The spiritual home of F1, Silverstone is all about high-speed corner sequences and raw downforce.",
+      "image_link": ""
+    },
+    {
+      "official_name": "Circuit de Spa-Francorchamps",
+      "location": "Spa, Belgium",
+      "date": "25–27 July 2025",
+      "info": "Belgium’s beloved Spa features elevation, high-speed turns, and unpredictable weather in the Ardennes forest.",
+      "image_link": ""
+    },
+    {
+      "official_name": "Hungaroring",
+      "location": "Budapest, Hungary",
+      "date": "1–3 August 2025",
+      "info": "Hungary’s tight and twisty layout favors high downforce and penalizes poor qualifying performance.",
+      "image_link": ""
+    },
+    {
+      "official_name": "Zandvoort – CM.com Circuit",
+      "location": "Zandvoort, Netherlands",
+      "date": "29–31 August 2025",
+      "info": "This Dutch circuit offers dramatic banking, fast corners, and an electric orange-clad fan atmosphere.",
+      "image_link": ""
+    },
+    {
+      "official_name": "Monza – Autodromo Nazionale Monza",
+      "location": "Monza, Italy",
+      "date": "5–7 September 2025",
+      "info": "Italy’s temple of speed with minimal drag and maximum slipstreaming down long straights.",
+      "image_link": ""
+    },
+    {
+      "official_name": "Baku City Circuit",
+      "location": "Baku, Azerbaijan",
+      "date": "19–21 September 2025",
+      "info": "Azerbaijan’s high-speed street course blends wide boulevards and tight medieval turns around a castle.",
+      "image_link": ""
+    },
+    {
+      "official_name": "Marina Bay Street Circuit",
+      "location": "Singapore, Singapore",
+      "date": "3–5 October 2025",
+      "info": "Singapore’s humid night race offers a brutal 2-hour endurance challenge through a tight urban jungle.",
+      "image_link": ""
+    },
+    {
+      "official_name": "Circuit of the Americas",
+      "location": "Austin, USA",
+      "date": "17–19 October 2025",
+      "info": "Austin’s Tilke-designed circuit includes iconic elevation changes and corners modeled after Silverstone and Suzuka.",
+      "image_link": ""
+    },
+    {
+      "official_name": "Autódromo Hermanos Rodríguez",
+      "location": "Mexico City, Mexico",
+      "date": "24–26 October 2025",
+      "info": "Mexico City’s thin-air circuit includes a stadium section and long straights favoring low-downforce setups.",
+      "image_link": ""
+    },
+    {
+      "official_name": "Interlagos – Autódromo José Carlos Pace",
+      "location": "São Paulo, Brazil",
+      "date": "7–9 November 2025",
+      "info": "Brazil’s chaotic classic features a flowing lap with dramatic weather shifts and passionate fans.",
+      "image_link": ""
+    },
+    {
+      "official_name": "Las Vegas Strip Circuit",
+      "location": "Las Vegas, USA",
+      "date": "20–22 November 2025",
+      "info": "A neon-lit, high-speed spectacle weaving through the heart of Vegas nightlife with long straights.",
+      "image_link": ""
+    },
+    {
+      "official_name": "Lusail International Circuit",
+      "location": "Lusail, Qatar",
+      "date": "28–30 November 2025",
+      "info": "Qatar’s wide and flowing circuit hosts a floodlit night race with smooth tarmac and high-speed curves.",
+      "image_link": ""
+    },
+    {
+      "official_name": "Yas Marina Circuit",
+      "location": "Abu Dhabi, United Arab Emirates",
+      "date": "5–7 December 2025",
+      "info": "Abu Dhabi’s season finale features sunset drama and a recently revamped layout for better racing.",
+      "image_link": ""
+    }
+  ]
+}
