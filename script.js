@@ -119,10 +119,11 @@ function loadtrackdata(data) {
   for (let i = 0; i < tracks.length; i++) {
     track_data += `
       <div class="name">${tracks[i].official_name}</div>
-      <div class="location">${tracks[i].location}</div>
+      <div class="location">${tracks[i].location}, ${tracks[i].date}</div>
       <div class="info">${tracks[i].info}</div>
-      <div class="image"> <img id="australia" src="tracks/australia.png" alt="australia" class="rounded-image image-box" style="display: inline-block"> </div>
-    `;
+      <div class="image"> <img id="track" src="${tracks[i].image_link}" alt="track" class="rounded-image image-box" style="display: inline-block"> </div>
+      <br>
+      `;
   }
     console.log("added track:", track_data);
 
