@@ -2,31 +2,39 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>Mclaren</title>
+    <title>mclaren</title>
     <link rel="stylesheet" href="../../style.css" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,599;1,599&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,599;1,599&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
 </head>
-<body>
-    <h1>McLaren</h1>
-    <p>Founded in 1963 McLaren is one of the longest and most succesful teams in the history of F1. With numerous championships, McLaren cements its legacy in F1.</p>
+<body style="background-color: #1b1b20;">
+    <h1 id="teamName">Team Name</h1>
+    <p id="description">Team Desc</p>
+    
+    <br>
 
     <h2>The Drivers</h2>
     <div style="display: grid; grid-template-columns: auto auto; justify-items: center;">
         <div style="text-align: center;">
-            <p>Oscar Piastri</p>
-            <img id="Oscar" src="oscar.png" alt="Oscar Piastri" class="driver-image">
+            <p id="driver0">Driver 1</p>
+            <img id="driver0image" src="Driver 1" alt="Driver 1" class="image-box">
         </div>
         <div style="text-align: center;">
-            <p>Lando Norris</p>
-            <img id="Lando" src="landonorris.png" alt="Lando Norris" class="driver-image">
+            <p id="driver1">Driver 2</p>
+            <img id="driver1image" src="Driver 2" alt="Driver 2" class="image-box">
         </div>
     </div>
 
     <h2>Championships</h2>
-    <p>McLaren has blank driver championships and blank constructor championships. You can find information about the championships below!</p>
-    <div style="display: grid; grid-template-columns: auto auto; justify-items: center;">
+    <p>[Team Name] has [blank] driver championships and [blank] constructor championships. You can find information about the championships below!</p>
+    <div style="display: flex; justify-content: space-around; align-items: center;">
         <div style="text-align: center;">
             <h2>Drivers Championship</h2>
-            <table class="center" border="1px">
+            <table class="standings" style="display: flex; justify-content: space-around;">
                 <tr>
                     <th>Year</th>
                     <th>Driver</th>
@@ -46,7 +54,7 @@
         </div>
         <div style="text-align: center;">
             <h2>Constructors Championship</h2>
-            <table class="center" border="1px">
+            <table class="standings" style="display: flex; justify-content: space-around;">
                 <tr>
                     <th>Year</th>
                     <th>Drivers</th>

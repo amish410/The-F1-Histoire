@@ -129,3 +129,8 @@ function loadtrackdata(data) {
 
     document.getElementById("trackinfo").innerHTML = track_data;
 }
+
+
+function loadteamdata(team) {
+  
+}
