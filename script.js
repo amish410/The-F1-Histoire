@@ -1,5 +1,6 @@
 let constructors = []
 let drivers = []
+let teamdata = []
 
 fetch('constructors.json')
     .then(response => response.json())
@@ -11,6 +12,12 @@ fetch('drivers.json')
     .then(response => response.json())
     .then(data => {
         drivers = data;
+    })
+
+fetch('teaminfo.json')
+    .then(response => response.json())
+    .then(data => {
+        teamdata = data;
     })
 
 function showdrivers() {
@@ -133,4 +140,9 @@ function loadtrackdata(data) {
 
 function loadteamdata(team) {
   
+  document.addEventListener("DOMContentLoaded", () => {
+    if (window.location.pathname.endsWith(`${team}.html`)) {
+      document.getElementById("description").innerHTML = teamdata[team].description;
+    }
+  });
 }
