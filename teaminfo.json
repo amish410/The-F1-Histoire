@@ -112,8 +112,8 @@
     "teamName": "McLaren",
     "description": "Founded in 1963, McLaren is one of F1’s most successful teams, with a rich history featuring legends like Ayrton Senna, Alain Prost, and Lewis Hamilton.",
     "drivers": [
-      { "name": "Lando Norris", "image": "" },
-      { "name": "Oscar Piastri", "image": "" }
+      { "name": "Lando Norris", "image": "landonorris.png" },
+      { "name": "Oscar Piastri", "image": "oscar.png" }
     ],
     "championships": {
       "drivers": 12,

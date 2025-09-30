@@ -1,6 +1,5 @@
 let constructors = []
 let drivers = []
-let teamdata = []
 
 fetch('constructors.json')
     .then(response => response.json())
@@ -14,11 +13,6 @@ fetch('drivers.json')
         drivers = data;
     })
 
-fetch('teaminfo.json')
-    .then(response => response.json())
-    .then(data => {
-        teamdata = data;
-    })
 
 function showdrivers() {
     let year = parseInt(document.getElementById("drivers").value);
@@ -137,12 +131,19 @@ function loadtrackdata(data) {
     document.getElementById("trackinfo").innerHTML = track_data;
 }
 
+function loadteamdata(name) {
+  let teamname = name;
 
-function loadteamdata(team) {
-  
-  document.addEventListener("DOMContentLoaded", () => {
-    if (window.location.pathname.endsWith(`${team}.html`)) {
-      document.getElementById("description").innerHTML = teamdata[team].description;
-    }
-  });
+  fetch('../../teaminfo.json')
+   .then(response => response.json())
+    .then(data => {
+      team = data[teamname];
+      document.getElementById("description").innerHTML = team.description;
+      document.getElementById("driver1").innerHTML = team.drivers[0].name;
+      document.getElementById("driver2").innerHTML = team.drivers[1].name;
+      document.getElementById("driver1image").src = team.drivers[0].image;
+      document.getElementById("driver2image").src = team.drivers[1].image;
+      document.getElementById("numbers").innerHTML = `${teamname.charAt(0).toUpperCase()}${teamname.slice(1)} has ${team.championships.drivers} driver championships and ${team.championships.constructors} constructor championships. You can find information about the championships below!`
+
+    });
 }
