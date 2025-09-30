@@ -133,6 +133,8 @@ function loadtrackdata(data) {
 
 function loadteamdata(name) {
   let teamname = name;
+  let drivers = document.getElementById("driverstable")
+  let constructors = document.getElementById("constructorstable")
 
   fetch('../../teaminfo.json')
    .then(response => response.json())
@@ -145,5 +147,44 @@ function loadteamdata(name) {
       document.getElementById("driver2image").src = team.drivers[1].image;
       document.getElementById("numbers").innerHTML = `${teamname.charAt(0).toUpperCase()}${teamname.slice(1)} has ${team.championships.drivers} driver championships and ${team.championships.constructors} constructor championships. You can find information about the championships below!`
 
-    });
-}
+      while (drivers.rows.length > 1) {
+        drivers.deleteRow(1);
+      }
+
+      for (let i = 0; i < team.championships.driverDetails.length; i++) {
+        let row = drivers.insertRow(1+i);
+        for (let i = 0; i < 3; i++) {
+          row.insertCell(i);
+        }
+        
+        let td = row.getElementsByTagName("td");
+        let year = team.championships.driverDetails[i].year;
+        let driver = team.championships.driverDetails[i].driver;
+        let points = team.championships.driverDetails[i].points;
+
+        td[0].innerHTML = year;
+        td[1].innerHTML = driver;
+        td[2].innerHTML = points;
+      }
+
+
+      while (constructors.rows.length > 1) {
+        constructors.deleteRow(1);
+      }
+
+      for (let i = 0; i < team.championships.constructorDetails.length; i++) {
+        let row = constructors.insertRow(1+i);
+        for (let i = 0; i < 3; i++) {
+          row.insertCell(i);
+        }
+        
+        let td = row.getElementsByTagName("td");
+        let year = team.championships.constructorDetails[i].year;
+        let driver = team.championships.constructorDetails[i].drivers;
+        let points = team.championships.constructorDetails[i].points;
+
+        td[0].innerHTML = year;
+        td[1].innerHTML = driver;
+        td[2].innerHTML = points;
+      }
+    })};
