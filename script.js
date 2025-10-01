@@ -13,6 +13,25 @@ fetch('drivers.json')
         drivers = data;
     })
 
+function changebackground() {
+  let background = document.getElementById("background")
+  if (background.style.backgroundImage) {
+    background.style = "background-color: #1b1b20;"
+  }
+  else {
+    background.style = "background-image: url('../../f1background.webp'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;"
+  }
+}
+
+function changebackgroundmainpage() {
+  let background = document.getElementById("background")
+  if (background.style.backgroundImage) {
+    background.style = "background-color: #1b1b20;"
+  }
+  else {
+    background.style = "background-image: url('f1background.webp'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;"
+  }
+}
 
 function showdrivers() {
     let year = parseInt(document.getElementById("drivers").value);
@@ -133,6 +152,8 @@ function loadtrackdata(data) {
 
 function loadteamdata(name) {
   let teamname = name;
+  let drivers = document.getElementById("driverstable")
+  let constructors = document.getElementById("constructorstable")
 
   fetch('../../teaminfo.json')
    .then(response => response.json())
@@ -143,7 +164,56 @@ function loadteamdata(name) {
       document.getElementById("driver2").innerHTML = team.drivers[1].name;
       document.getElementById("driver1image").src = team.drivers[0].image;
       document.getElementById("driver2image").src = team.drivers[1].image;
+
+      if (team.championships.special === "This team has no championships.") {
+        drivers.remove()
+        constructors.remove()
+        document.getElementById("numbers").innerHTML = "This team has no championships. Go support them and help them get their first!"
+        document.getElementById("driversheading").style.display = "none"
+        document.getElementById("constructorheading").style.display = "none"
+        return;
+      }
+
       document.getElementById("numbers").innerHTML = `${teamname.charAt(0).toUpperCase()}${teamname.slice(1)} has ${team.championships.drivers} driver championships and ${team.championships.constructors} constructor championships. You can find information about the championships below!`
 
-    });
-}
+      while (drivers.rows.length > 1) {
+        drivers.deleteRow(1);
+      }
+
+      for (let i = 0; i < team.championships.driverDetails.length; i++) {
+        let row = drivers.insertRow(1+i);
+        for (let i = 0; i < 3; i++) {
+          row.insertCell(i);
+        }
+        
+        let td = row.getElementsByTagName("td");
+        let year = team.championships.driverDetails[i].year;
+        let driver = team.championships.driverDetails[i].driver;
+        let points = team.championships.driverDetails[i].points;
+
+        td[0].innerHTML = year;
+        td[1].innerHTML = driver;
+        td[2].innerHTML = points;
+      }
+
+
+      while (constructors.rows.length > 1) {
+        constructors.deleteRow(1);
+      }
+
+      for (let i = 0; i < team.championships.constructorDetails.length; i++) {
+        let row = constructors.insertRow(1+i);
+        for (let i = 0; i < 3; i++) {
+          row.insertCell(i);
+        }
+        
+        let td = row.getElementsByTagName("td");
+        let year = team.championships.constructorDetails[i].year;
+        let driver = team.championships.constructorDetails[i].drivers;
+        let points = team.championships.constructorDetails[i].points;
+
+        td[0].innerHTML = year;
+        td[1].innerHTML = driver;
+        td[2].innerHTML = points;
+      }
+    })};

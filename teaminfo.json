@@ -1,10 +1,10 @@
 {
-  "mercedes": {
+  "mercs": {
     "teamName": "Mercedes-AMG Petronas Formula One Team",
     "description": "Mercedes is one of the most dominant teams in F1 history, known for its hybrid-era success led by Lewis Hamilton. Based in Brackley, UK, with engines built in Brixworth.",
     "drivers": [
-      { "name": "Lewis Hamilton", "image": "" },
-      { "name": "George Russell", "image": "" }
+      { "name": "George Russel", "image": "Antonelli2025.webp" },
+      { "name": "Andrea Kimi Antonelli", "image": "russel.png" }
     ],
     "championships": {
       "drivers": 9,
@@ -36,11 +36,11 @@
     "teamName": "Red Bull Racing",
     "description": "Founded in 2005, Red Bull Racing has become one of the most successful F1 teams, famous for their dominance with Sebastian Vettel and Max Verstappen.",
     "drivers": [
-      { "name": "Max Verstappen", "image": "" },
-      { "name": "Sergio Pérez", "image": "" }
+      { "name": "Max Verstappen", "image": "verstappen.avif" },
+      { "name": "Yuki Tsunoda", "image": "yuki.webp" }
     ],
     "championships": {
-      "drivers": 7,
+      "drivers": 8,
       "constructors": 6,
       "driverDetails": [
         { "year": 2010, "driver": "Sebastian Vettel", "points": 256 },
@@ -49,7 +49,8 @@
         { "year": 2013, "driver": "Sebastian Vettel", "points": 397 },
         { "year": 2021, "driver": "Max Verstappen", "points": 395.5 },
         { "year": 2022, "driver": "Max Verstappen", "points": 454 },
-        { "year": 2023, "driver": "Max Verstappen", "points": 575 }
+        { "year": 2023, "driver": "Max Verstappen", "points": 575 },
+        { "year": 2024, "driver": "Max Verstappen", "points": 437 }
       ],
       "constructorDetails": [
         { "year": 2010, "drivers": "Vettel/Webber", "points": 498 },
@@ -65,8 +66,8 @@
     "teamName": "Scuderia Ferrari",
     "description": "Scuderia Ferrari is the most historic F1 team, competing since 1950. Known as the 'Prancing Horse,' Ferrari has more passion and heritage than any other team.",
     "drivers": [
-      { "name": "Charles Leclerc", "image": "" },
-      { "name": "Carlos Sainz", "image": "" }
+      { "name": "Charles Leclerc", "image": "lecrec.png" },
+      { "name": "Lewis Hamilton", "image": "hamilton.png" }
     ],
     "championships": {
       "drivers": 15,
@@ -140,27 +141,28 @@
         { "year": 1989, "drivers": "Senna/Prost", "points": 141 },
         { "year": 1990, "drivers": "Senna/Berger", "points": 121 },
         { "year": 1991, "drivers": "Senna/Berger", "points": 139 },
-        { "year": 1998, "drivers": "Häkkinen/Coulthard", "points": 156 }
+        { "year": 1998, "drivers": "Häkkinen/Coulthard", "points": 156 },
+        { "year": 2024, "drivers": "Piastri/Norris", "points": 666 }
       ]
     }
   },
-  "aston_martin": {
+  "aston": {
     "teamName": "Aston Martin",
     "description": "Rebranded in 2021, Aston Martin is building towards becoming a front-running team, with strong investment and Fernando Alonso’s experience.",
     "drivers": [
-      { "name": "Fernando Alonso", "image": "" },
-      { "name": "Lance Stroll", "image": "" }
+      { "name": "Fernando Alonso", "image": "alonso.jpg" },
+      { "name": "Lance Stroll", "image": "lance.jpg" }
     ],
     "championships": {
-      "special": "This team has no championships as Aston Martin."
+      "special": "This team has no championships."
     }
   },
   "alpine": {
     "teamName": "Alpine",
     "description": "Formerly Renault, Alpine entered F1 under its current name in 2021, aiming to combine French engineering with competitive performance.",
     "drivers": [
-      { "name": "Esteban Ocon", "image": "" },
-      { "name": "Pierre Gasly", "image": "" }
+      { "name": "Franco Colapinto", "image": "colapinto.webp" },
+      { "name": "Pierre Gasly", "image": "gasly.webp" }
     ],
     "championships": {
       "drivers": 2,
@@ -179,8 +181,8 @@
     "teamName": "Williams",
     "description": "Williams is one of F1’s iconic teams, historically successful with nine constructors’ championships, though struggling in recent years.",
     "drivers": [
-      { "name": "Alex Albon", "image": "" },
-      { "name": "Logan Sargeant", "image": "" }
+      { "name": "Alex Albon", "image": "alex.png" },
+      { "name": "Carlos Sainz", "image": "sainz.jpg" }
     ],
     "championships": {
       "drivers": 7,
@@ -207,34 +209,34 @@
       ]
     }
   },
-  "sauber": {
+  "stake": {
     "teamName": "Stake F1 Team (Sauber)",
     "description": "Based in Switzerland, Sauber now races as Stake F1 Team. Historically a midfield contender, the team is preparing for Audi’s takeover in 2026.",
     "drivers": [
-      { "name": "Valtteri Bottas", "image": "" },
-      { "name": "Guanyu Zhou", "image": "" }
+      { "name": "Nico Hülkenberg", "image": "nico.png" },
+      { "name": "Gabriel Bortoleto", "image": "Bortoleto2025.webp" }
     ],
     "championships": {
       "special": "This team has no championships."
     }
   },
-  "alphatauri": {
+  "racingbulls": {
     "teamName": "Visa Cash App RB (formerly AlphaTauri)",
     "description": "Originally known as Toro Rosso, the Red Bull sister team has served as a proving ground for young drivers, most notably Sebastian Vettel and Max Verstappen.",
     "drivers": [
-      { "name": "Yuki Tsunoda", "image": "" },
-      { "name": "Daniel Ricciardo", "image": "" }
+      { "name": "Liam Lawson", "image": "lawson.webp" },
+      { "name": "Isack Hadjar", "image": "hadjar.png" }
     ],
     "championships": {
       "special": "This team has no championships."
     }
   },
-  "haas": {
+  "hass": {
     "teamName": "Haas F1 Team",
     "description": "America’s only F1 team, Haas debuted in 2016. Known for cost efficiency and Ferrari partnerships, Haas is still chasing its first big success.",
     "drivers": [
-      { "name": "Kevin Magnussen", "image": "" },
-      { "name": "Nico Hülkenberg", "image": "" }
+      { "name": "Oliver Bearman", "image": "Bearman2025.webp" },
+      { "name": "Esteban Ocon", "image": "ocon.png" }
     ],
     "championships": {
       "special": "This team has no championships."
