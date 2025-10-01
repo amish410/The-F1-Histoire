@@ -23,6 +23,16 @@ function changebackground() {
   }
 }
 
+function changebackgroundmainpage() {
+  let background = document.getElementById("background")
+  if (background.style.backgroundImage) {
+    background.style = "background-color: #1b1b20;"
+  }
+  else {
+    background.style = "background-image: url('f1background.webp'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;"
+  }
+}
+
 function showdrivers() {
     let year = parseInt(document.getElementById("drivers").value);
     if (isNaN(year) || year < 1950 || year > 2020) {
